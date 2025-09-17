@@ -4,3 +4,29 @@ author: 'Jingfeng Cao'
 output: github_document
 ---
 
+## Problem 1
+
+load library
+```{r}
+library(moderndive)
+library(tidyverse)
+```
+
+load data
+
+```{r}
+data("early_january_weather")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
