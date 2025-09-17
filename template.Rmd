@@ -1,0 +1,6 @@
+---
+title: 'P8105 HW1'
+author: 'Jingfeng Cao'
+output: github_document
+---
+
