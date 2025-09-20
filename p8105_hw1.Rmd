@@ -35,7 +35,17 @@ The temp has periodically waves, which might be because of high temperature duri
 
 ## Problem 2
 
-
+Create the dataframe:
+```{r}
+rnumber_x = rnorm(10)
+problem2_df = tibble(
+  rnumber_snd = rnumber_x,
+  greater_0 = rnumber_x > 0,
+  rchar = sample(letters,10,TRUE),
+  rfactor = factor(sample(c('A','B','C'),10,TRUE),c('A','B','C'))
+)
+problem2_df
+```
 
 
 
