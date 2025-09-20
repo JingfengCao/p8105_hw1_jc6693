@@ -37,6 +37,7 @@ The temp has periodically waves, which might be because of high temperature duri
 
 Create the dataframe:
 ```{r}
+set.seed(12346789)
 rnumber_x = rnorm(10)
 problem2_df = tibble(
   rnumber_snd = rnumber_x,
@@ -47,7 +48,20 @@ problem2_df = tibble(
 problem2_df
 ```
 
+try to take the mean:  
+1. mean(rnumber_snd) = `r mean(pull(problem2_df,rnumber_snd))`.  
+2. mean(greater_0) = `r mean(pull(problem2_df,greater_0))`.  
+3. mean(rchar) = `r mean(pull(problem2_df,rchar))`.  
+4. mean(rfactor) = `r mean(pull(problem2_df,rfactor))`.  
 
+the numeric and logical variables can successfully take the mean, and the character and factor variables can not. 
 
+using `as.numeric` :
+```{r eval=FALSE}
+as.numeric(pull(problem2_df,greater_0))
+as.numeric(pull(problem2_df,rchar))
+as.numeric(pull(problem2_df,rfactor))
+```
 
+it is successful when dealing with logical variables and factor variables. It can explain that in logical variables TURE equals 1 and FALSE equals 0 when calculate mean. But factor variables can not directly calculate mean though it has numbers represent to each level. 
 
