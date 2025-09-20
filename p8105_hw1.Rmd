@@ -20,6 +20,9 @@ data("early_january_weather")
 
 ### short discription
 
+This dataset contains variables of `r names(early_january_weather)`. And it contains `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns. The mean temperature is `r mean(early_january_weather$temp)`. 
+
+### scatterplot of temp vs time_hour
 
 
 
